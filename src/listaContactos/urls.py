@@ -19,6 +19,7 @@ from inicio.views import myHoneView
 
 urlpatterns = [
     path('', myHoneView, name = 'Pagina de Inicio'),
+    path('another', myHoneView, name = 'Pagina de Inicio'),
     path('admin/', admin.site.urls),
 ]
 
