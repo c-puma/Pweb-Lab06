@@ -6,9 +6,10 @@
         </title>
     </head>
     <body>
+        {% include 'nav.html' %}
         <h1>Probando bases para reutilizar</h1>
-        { % block content % }
+        {% block content %}
             Reemplazame
-        { % endblock % }    
+        {% endblock %}    
     </body>
 </html>
