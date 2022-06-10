@@ -16,10 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from inicio.views import myHoneView
+from inicio.views import anotherView
 
 urlpatterns = [
     path('', myHoneView, name = 'Pagina de Inicio'),
-    path('another', myHoneView, name = 'Pagina de Inicio'),
+    path('another', anotherView),
     path('admin/', admin.site.urls),
 ]
 

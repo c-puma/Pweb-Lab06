@@ -4,3 +4,5 @@ from django.http import HttpResponse
 
 def myHoneView(*args, **kwargs):
     return HttpResponse('<hl>Hola Mundo desde Dlango</hi>')
+def anotherView(request):
+    return HttpResponse('<hl>Solo es otra pagina desde Dlango</hi>')
