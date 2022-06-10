@@ -9,6 +9,6 @@ def myHoneView(request, *args, **kwargs):
     return render(request, "home.html", {})
 
 def anotherView(request):
-    return HttpResponse('<hl>Solo es otra pagina desde Dlango</hi>')
+    return render(request, "otroTemplate.html")
 def testView(request):
     return HttpResponse("Probando mas vistas!")
