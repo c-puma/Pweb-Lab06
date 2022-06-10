@@ -8,5 +8,16 @@
     <body>
         <h1>Hola mundo desde Django</h1>
         <h2>Con template</h2>
+        {{ request.user }}
+        <br>
+        {{ request.user.is_authenticated }}
+        <br>
+        {{ request.method }}
+        <br>
+        {{ request.body }}
+        <br>
+        {{ request.scheme }}
+        <br>
+
     </body>
 </html>
