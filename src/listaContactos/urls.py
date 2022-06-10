@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from inicio.views import myHoneView
 
 urlpatterns = [
+    path('', myHoneView, name = 'Pagina de Inicio'),
     path('admin/', admin.site.urls),
 ]
+
