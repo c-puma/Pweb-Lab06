@@ -6,7 +6,7 @@ from django.http import HttpResponse
 def myHoneView(request, *args, **kwargs):
     print(args, kwargs)
     print(request.user)
-    return HttpResponse('<hl>Hola mundo desde Dlango</hi>')
+    return render(request, "home.html", {})
 
 def anotherView(request):
     return HttpResponse('<hl>Solo es otra pagina desde Dlango</hi>')
